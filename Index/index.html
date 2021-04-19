@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerflex">
+        <div class="headertext">
+          <p>Overskrift 1</p>
+        </div>
+        <div class="headertext">
+          <p>Overskrift 2</p>
+        </div>
+        <div class="headertext">
+          <p>Overskrift 3</p>
+        </div>
+        <div class="headertext">
+          <p>Overskrift 4</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="parallax">
+
+    <img src="images/bubble1.png" data-speed="-5" alt="bubble" class="layer">
+    <img src="images/bubble2.png" data-speed="5" alt="bubble"  class="layer">
+    <img src="images/bubble3.png" data-speed="6" alt="bubble"  class="layer">
+    <img src="images/bubble4.png" data-speed="2" alt="bubble"  class="layer">
+    <img src="images/bubble5.png" data-speed="8" alt="bubble"  class="layer">
+    <img src="images/bubble6.png" data-speed="-2" alt="bubble" class="layer">
+    <img src="images/bubble7.png" data-speed="4" alt="bubble"  class="layer">
+    <img src="images/bubble8.png" data-speed="-9" alt="bubble" class="layer">
+    <img src="images/bubble9.png" data-speed="6" alt="bubble"  class="layer">
+    <img src="images/bubble10.png"data-speed="-5" alt="bubble" class="layer">
+    <img src="images/bubble11.png"data-speed="-7" alt="bubble" class="layer">
+    <div class="layer">
+    <div class="hero">
+      <div class="herotext">
+        <h1>Den Fynske</h1>
+      </div>
+      <hr width="295px" color="#52b984" size="3" />
+      <div class="herotext">
+        <h2>Sorggruppe</h2>
+      </div>
+
+  </section>
+
+  </div>
+    <footer class="footer">
+      <div class="footerflex">
+        <div class="footertext">
+          <p>&#169; Copyright - Den Fynske Sorggruppe for Børn og Unge</p>
+        </div>
+        <div class="footertext">
+          <p><strong>Kontakt:</strong> +45 29 89 39 11</p>
+        </div>
+        <div class="footersocials">
+          <a href="#">
+            <img src="images/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/sorggruppefyn">
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove" , parallax);
+      function parallax(e){
+      this.querySelectorAll('.layer').forEach(layer => {
+        const speed = layer.getAttribute('data-speed')
+
+        const x = (window.innerWidth - e.pageX*speed)/100
+        const y = (window.innerHeight - e.pageY*speed)/100
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
+    }
+
+    </script>
+  </body>
+</html>

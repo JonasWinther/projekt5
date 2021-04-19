@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.header {
+  background-color: #52b984;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.headerflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.parallax img {
+  opacity: 65%;
+}
+
+.hero h1 {
+  color: #52b984;
+  font-size: 48px;
+  padding-bottom: 0.4%;
+}
+
+.hero h2 {
+  color: #52b984;
+  font-size: 48px;
+  padding-left: 120px;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 1042px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section h2 {
+  position: relative;
+  color: #111;
+}
+.footer {
+  position: relative;
+  background-color: #52b984;
+  z-index: 1;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footerflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.footersocials a {
+  text-decoration: none;
+}
+
+.footersocials img {
+  width: 30px;
+  padding-right: 0px;
+}
