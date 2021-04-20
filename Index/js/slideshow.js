@@ -3,9 +3,9 @@ var images = [];
 var time = 3000;
 
 // Billede liste
-images[0] = "../images/hjerte.jpg";
-images[1] = "../images/venner.jpg";
-images[2] = "../images/lys.jpg";
+images[0] = "../images/hjerte.png";
+images[1] = "../images/venner.png";
+images[2] = "../images/lys.png";
 
 // Billede skift
 function changeImg() {
